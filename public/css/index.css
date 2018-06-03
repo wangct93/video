@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    height: 100%;
+}
+.content{
+    height: 600px;
+    width: 1000px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    height: 34px;
+    line-height: 34px;
+    padding-left: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.main{
+    flex: 1;
+    display: flex;
+}
+.left{
+    width: 300px;
+    border-right: 1px solid #ccc;
+}
+.right{
+    flex: 1;
+}
+
+.video-list{
+    overflow: auto;
+}
+.video-list > li{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+.video-list > li:hover{
+    background-color: #f1f1f1;
+}
